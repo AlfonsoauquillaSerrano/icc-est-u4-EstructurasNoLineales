@@ -3,7 +3,7 @@ import structures.node.Node;
 public class BinaryTree<T extends Comparable<T>> {
 
      private Node<T> root;
-    private int peso;
+     private int peso;
 
     public BinaryTree() {
         this.root = null;
@@ -25,6 +25,7 @@ public class BinaryTree<T extends Comparable<T>> {
     
     
     public void add (T i){
+        peso++;
         Node<T> node = new Node<T>(i);
         root = addRecursivo(root,node);
     }
