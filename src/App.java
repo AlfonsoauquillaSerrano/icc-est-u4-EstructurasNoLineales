@@ -5,21 +5,29 @@ import structures.trees.InTree;
 import structures.trees.Ejercicicio_01_insert.InsertBSTTest;
 import structures.trees.Ejercicio_02_invert.InvertBinaryTree;
 import structures.trees.Ejercicio_03_listLeves.ListLevels;
+import structures.trees.Ejercicio_04_depth.Depth;
 import models.Persona;
 
 public class App {
     public static void main(String[] args) throws Exception {
         runInTree();
+        System.out.println("");
         runBinaryTree();
+        System.out.println("");
         runEjercicios();
     }
 
     private static void runEjercicios() {
+        System.out.println("Ejercicio_1: InsertBSTTest");
+        System.out.println("");
         InsertBSTTest ejercicio1 = new InsertBSTTest();
         int[] numeros1 = new int[] {5,3,7,2,4,6,8};
         ejercicio1.insert(numeros1);
-        
+        System.out.println("Resultado generado correctamente");
+        System.out.println("");
 
+        System.out.println("Ejercicio_2: InvertBinaryTree");
+        System.out.println("");
         InvertBinaryTree ejercicio2 = new InvertBinaryTree();
         int[] numeros2 = new int[] {5,3,7,2,4,6,8};
         BinaryTree<Integer> tree = new BinaryTree<>();
@@ -31,7 +39,11 @@ public class App {
         ejercicio2.invertTree(tree.getRoot());
         System.out.println("Imprimiendo el arbol invertido:");
         ejercicio2.prinTree(tree.getRoot());
+        System.out.println("Resultado generado correctamente");
+        System.out.println("");
         
+        System.out.println("Ejercicio_3: ListLevels");
+        System.out.println("");
         ListLevels ejercicio3 = new ListLevels();
         int[] numeros3 = new int[] {5,3,7,2,4,6,8};
         BinaryTree<Integer> tree3 = new BinaryTree<>();
@@ -39,6 +51,20 @@ public class App {
             tree3.add(numero);
         }
         ejercicio3.listLevels(tree3.getRoot());
+        System.out.println("Resultado generado correctamente");
+        System.out.println("");
+        
+        System.out.println("Ejercicio_4: Depth");
+        System.out.println("");
+        Depth ejercicio4 = new Depth();
+        int[] numeros4 = new int[] {5,3,7,2,4,6,8};
+        BinaryTree<Integer> tree4 = new BinaryTree<>();
+        for (int numero : numeros4) {
+            tree3.add(numero);
+        }
+        ejercicio3.listLevels(tree4.getRoot());
+        System.out.println("Resultado generado correctamente");
+        System.out.println("");
     }
 
     private static void runBinaryTree() {
