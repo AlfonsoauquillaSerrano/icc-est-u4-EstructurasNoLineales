@@ -1,8 +1,8 @@
 
 package structures.trees.Ejercicicio_01_insert;
-import models.Persona;
+
 import structures.trees.BinaryTree;
-import structures.trees.Ejercicio_02_invert.InvertBinaryTree;
+
 import structures.node.Node;
 public class InsertBSTTest {
 

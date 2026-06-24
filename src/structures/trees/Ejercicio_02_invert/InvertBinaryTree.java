@@ -1,6 +1,6 @@
 package structures.trees.Ejercicio_02_invert;
 import structures.node.Node;
-import structures.trees.Ejercicicio_01_insert.InsertBSTTest;
+
 public class InvertBinaryTree {
 
     public Node<Integer> invertTree(Node<Integer> root) {
