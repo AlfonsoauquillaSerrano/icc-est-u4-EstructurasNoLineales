@@ -10,30 +10,39 @@
 ## 1. Ejercicio_1
 **Descripción:** Este código funciona como un organizador automático: toma una lista de números y los acomoda en un árbol, donde cada valor se coloca a la izquierda o derecha según sea menor o mayor. Para ver el resultado, usamos una función de visualización que recorre el árbol de forma recursiva; al añadir espacios que se multiplican según la profundidad, logramos "dibujar" el árbol de lado en la consola, permitiéndonos ver claramente cómo se conectan las ramas y niveles de forma jerárquica.
 **Codigo**
-![Captura de salida en consola](assets/1.png)
+![Captura de salida en consola](assets/Ejercicio1/1.png)
 **Salida**
-![Captura de salida en consola](assets/1r.png)
+![Captura de salida en consola](assets/Ejercicio1/1r.png)
 
 ## 1. Ejercicio_2
 **Descripción:** El código funciona de manera recursiva: empieza en la raíz y, al llegar a cada nodo, simplemente es el reflejo sus conexiones. Si el nodo tenía un hijo izquierdo, lo mueve a la derecha, y el hijo derecho lo mueve a la izquierda, repitiendo este proceso hasta llegar a todas las hojas. Al finalizar, habremos creado una imagen especular de nuestro árbol original, manteniendo la jerarquía pero con los lados totalmente invertidos.
 **Codigo**
-![Captura de salida en consola](assets/2.png)
+![Captura de salida en consola](assets/Ejercicio2/2.png)
 **Salida**
-![Captura de salida en consola](assets/2r.png)
+![Captura de salida en consola](assets/Ejercicio2/2r.png)
 
 ## 1. Ejercicio_3
 **Descripción:** Este ejercicio se trata de leer el árbol por "pisos" en lugar de seguir las ramas. Usamos una cola para ir guardando los nodos nivel por nivel, lo que nos permite visitar primero a los hijos de la raíz, luego a sus nietos, y así sucesivamente. En la práctica, es como si estuviéramos barriendo el árbol horizontalmente; esto es genial porque nos da una vista panorámica de qué números viven en la misma profundidad, organizándolos en listas separadas para que podamos ver claramente la estructura completa del árbol sin perdernos en las ramas.
 **Codigo**
-![Captura de salida en consola](assets/3.png)
+![Captura de salida en consola](assets/Ejercicio3/3.png)
 **Salida**
-![Captura de salida en consola](assets/3r.png)
+![Captura de salida en consola](assets/Ejercicio3/3r.png)
 
 ## 1. Ejercicio_4
 **Descripción:** EAquí lo que hacemos es medir qué tan "largo" es el árbol desde la raíz hasta el punto más profundo. Lo logramos mediante recursividad, donde cada nodo le pregunta a sus hijos quién de ellos tiene el camino más largo hacia el fondo; al final, cada nodo suma uno a ese valor más alto. Es un proceso de "abajo hacia arriba": las hojas reportan que tienen profundidad 1, y los padres van acumulando ese conteo hasta que llegamos a la raíz con la respuesta final, que nos dice cuántos niveles tiene nuestra estructura.
 **Codigo**
-![Captura de salida en consola](assets/4.png)
+![Captura de salida en consola](assets/Ejercicio4/4.png)
 **Salida**
-![Captura de salida en consola](assets/4r.png)
+![Captura de salida en consola](assets/Ejercicio4/4r.png)
+
+# Casos
+
+| Casos                          | Ejercicio 1| Ejercicio 2 | Ejercicio 3 | Ejercicio 4 |
+|-----------                     |----------- |-----------  |----------   |----------   |
+| Arbol vacio                    |![Captura de salida en consola](assets/Ejercicio1/caso1_1.png) |![Captura de salida en consola](assets/Ejercicio2/caso1_2.png)  |![Captura de salida en consola](assets/Ejercicio3/caso1_3.png)    |![Captura de salida en consola](assets/Ejercicio4/caso1_4.png)   |
+| Arbol con 1 nodo               |![Captura de salida en consola](assets/Ejercicio1/caso2_1.png) |![Captura de salida en consola](assets/Ejercicio2/caso2_2.png)      | ![Captura de salida en consola](assets/Ejercicio3/caso2_3.png)   |![Captura de salida en consola](assets/Ejercicio4/caso2_4.png)   |
+| Arbol con muchos noveles       |![Captura de salida en consola](assets/Ejercicio1/caso3_1.png) |![Captura de salida en consola](assets/Ejercicio2/caso3_2.png)     |![Captura de salida en consola](assets/Ejercicio3/caso3_3.png)    |![Captura de salida en consola](assets/Ejercicio4/caso3_4.png)   |
+| Arbol con nodos a la izquierda |![Captura de salida en consola](assets/Ejercicio1/caso4_1.png) |![Captura de salida en consola](assets/Ejercicio2/caso4_2.png)     |![Captura de salida en consola](assets/Ejercicio3/caso4_3.png)    |![Captura de salida en consola](assets/Ejercicio4/caso4_4.png)   |
 
 # Conclusiones:
 
