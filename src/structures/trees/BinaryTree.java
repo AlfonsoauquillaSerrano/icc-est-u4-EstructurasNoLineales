@@ -103,6 +103,5 @@ public class BinaryTree<T extends Comparable<T>> {
     public void setPeso(int peso) {
         this.peso = peso;
     }
-
     
 }

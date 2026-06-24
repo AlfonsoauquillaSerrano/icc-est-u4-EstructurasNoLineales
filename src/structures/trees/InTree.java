@@ -18,7 +18,7 @@ public class InTree {
     public void setRoot(Node<Integer> root) {
         this.root = root;
     }
-    
+              
     public void setRoot(Integer value){
         Node<Integer> node = new Node<Integer>(value);
         this.root = node;

@@ -1,9 +1,9 @@
 import models.Persona;
 import structures.node.Node;
 import structures.trees.BinaryTree;
-import structures.trees.Ejercicio1;
-import structures.trees.Ejercicio2;
 import structures.trees.InTree;
+import structures.trees.Ejercicicio_01_insert.InsertBSTTest;
+import structures.trees.Ejercicio_02_invert.InvertBinaryTree;
 import models.Persona;
 
 public class App {
@@ -14,21 +14,26 @@ public class App {
     }
 
     private static void runEjercicios() {
-        Ejercicio1 ejercicio1 = new Ejercicio1();
+        InsertBSTTest ejercicio1 = new InsertBSTTest();
         int[] numeros1 = new int[] {5,3,7,2,4,6,8};
         ejercicio1.insert(numeros1);
         
 
-         Ejercicio2 ejercicio2 = new Ejercicio2();
+        InvertBinaryTree ejercicio2 = new InvertBinaryTree();
         int[] numeros2 = new int[] {5,3,7,2,4,6,8};
         BinaryTree<Integer> tree = new BinaryTree<>();
         for (int numero : numeros2) {
             tree.add(numero);
-        Node<Integer> root = tree.getRoot();
-       
         }
-       
+        System.out.println("Imprimiendo el arbol original:");
+        ejercicio2.prinTree(tree.getRoot());
+        
+        ejercicio2.invertTree(tree.getRoot());
+        System.out.println("Imprimiendo el arbol invertido:");
+        ejercicio2.prinTree(tree.getRoot());
+        
 
+        
     }
 
     private static void runBinaryTree() {
