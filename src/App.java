@@ -4,6 +4,7 @@ import structures.trees.BinaryTree;
 import structures.trees.InTree;
 import structures.trees.Ejercicicio_01_insert.InsertBSTTest;
 import structures.trees.Ejercicio_02_invert.InvertBinaryTree;
+import structures.trees.Ejercicio_03_listLeves.ListLevels;
 import models.Persona;
 
 public class App {
@@ -26,14 +27,18 @@ public class App {
             tree.add(numero);
         }
         System.out.println("Imprimiendo el arbol original:");
-        ejercicio2.prinTree(tree.getRoot());
-        
+        ejercicio2.prinTree(tree.getRoot());   
         ejercicio2.invertTree(tree.getRoot());
         System.out.println("Imprimiendo el arbol invertido:");
         ejercicio2.prinTree(tree.getRoot());
         
-
-        
+        ListLevels ejercicio3 = new ListLevels();
+        int[] numeros3 = new int[] {5,3,7,2,4,6,8};
+        BinaryTree<Integer> tree3 = new BinaryTree<>();
+        for (int numero : numeros3) {
+            tree3.add(numero);
+        }
+        ejercicio3.listLevels(tree3.getRoot());
     }
 
     private static void runBinaryTree() {
