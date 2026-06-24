@@ -22,14 +22,14 @@ public class InvertBinaryTree {
     prinTreeRecursivo(root, 0);
 }
 
-private static void prinTreeRecursivo(Node<Integer> actual, int nivel) {
+    private static void prinTreeRecursivo(Node<Integer> actual, int nivel) {
     if (actual == null) return;
     
     prinTreeRecursivo(actual.getRight(), nivel + 1);
     String espacio = "    ".repeat(nivel);
     System.out.println(espacio + " " + actual);
     prinTreeRecursivo(actual.getLeft(), nivel + 1);
-}
+    }  
                              
 }
 
