@@ -1,3 +1,10 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Set;
+
+import Collections.Set.Sets;
+import Collections.maps.Maps;
 import models.Persona;
 import structures.node.Node;
 import structures.trees.BinaryTree;
@@ -7,14 +14,72 @@ import structures.trees.Ejercicio_02_invert.InvertBinaryTree;
 import structures.trees.Ejercicio_03_listLeves.ListLevels;
 import structures.trees.Ejercicio_04_depth.Depth;
 import models.Persona;
+import models.Contacto;
+import java.util.HashMap;
+import java.util.Map;
+import Collections.maps.Maps;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        runInTree();
-        System.out.println("");
-        runBinaryTree();
-        System.out.println("");
-        runEjercicios();
+        // runInTree();
+        // System.out.println("");
+        // runBinaryTree();
+        // System.out.println("");
+        // runEjercicios();
+        // System.out.println("");
+        // runSet();
+        runMap();
+    }
+
+    private static void runMap() {
+        Maps maps= new Maps();
+        System.out.println("HashMap");
+        maps.construirHashMap();
+        System.out.println("LinkedHashMap");
+        maps.cLinkedHashMap();
+        System.out.println("TreeMap");
+        maps.cTreeMap();
+    }
+
+    private static void runSet() {
+        Sets sets = new Sets();
+        //Implementacion basada en hashSet hash Code
+        System.out.println("HashCode: ");
+        Set<String> hashSet = sets.construirHashSet();
+        System.out.println(hashSet);
+        System.out.println("Size = "+ hashSet.size());
+        System.out.println(hashSet.contains("F"));
+
+        //Implementacion basada en LinkedhashSet hash Code
+        System.out.println("LinkedHashCode: ");
+        Set<String> lSet = sets.construirLinkedHashSet();
+        System.out.println(lSet);
+        System.out.println("Size = "+ lSet.size());
+        System.out.println(lSet.contains("F"));
+
+        //Implementacion basada en TreeSet 
+        System.out.println("TreeSet: ");
+        Set<String> tSet = sets.construirTreeHashSet();
+        System.out.println(tSet);
+        System.out.println("Size = "+ tSet.size());
+        System.out.println(tSet.contains("F"));
+        
+        //Implementacion basada en Contacto
+        System.out.println("Contacto: ");
+        Set<Contacto> cSet = sets.construirHashSetContacto();
+        System.out.println(cSet);
+        System.out.println("Size = "+cSet.size());
+        System.out.println(cSet.contains("F"));
+
+        //Implementacion basada en TreeContacto
+        System.out.println("Contacto: ");
+        Set<Contacto> tCSet = sets.construirTreeSetContacto();
+        System.out.println(tCSet);
+        System.out.println("Size = "+tCSet.size());
+        System.out.println(tCSet.contains("F"));
+        
+   
+
     }
 
     private static void runEjercicios() {

@@ -35,7 +35,7 @@
 **Salida**
 ![Captura de salida en consola](assets/Ejercicio4/4r.png)
 
-# Casos
+## Casos
 
 | Casos                          | Ejercicio 1| Ejercicio 2 | Ejercicio 3 | Ejercicio 4 |
 |-----------                     |----------- |-----------  |----------   |----------   |
